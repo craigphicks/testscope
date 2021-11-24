@@ -1,0 +1,20 @@
+{
+  "name": "@testscp/a",
+  "version": "0.0.1",
+  "description": "test of monorepo github packages",
+  "main": "index.js",
+  "repository": "https://github.com/craigphicks/testscope",
+  "author": "craig p hicks",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@testscp/b": "^0.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  },
+  "scripts": {
+    "build":"tsc",
+    "test": "node index.js"
+  }
+}

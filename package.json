@@ -1,0 +1,13 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces":[
+    "packages/*"
+  ],
+  "scripts":{
+    "install": "rm -rf packages/a/node_modules && rm -rf packages/b/node_modules && rm -rf node_modules && lerna bootstrap"
+  }
+}
