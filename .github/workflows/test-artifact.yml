@@ -1,6 +1,6 @@
 # Publish GitHub workflow artifacts tutorial example
 name: Publish GitHub Actions Artifacts Example
-on: [workflow_disp]
+on: [workflow_dispatch,push]
 jobs:
   archive-build-artifacts:
     runs-on: ubuntu-latest
