@@ -12,4 +12,7 @@ jobs:
     - run: yarn workspace @craigphicks/testscp-b publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - run: yarn workspace @craigphicks/testscp-a publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
