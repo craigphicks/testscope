@@ -9,7 +9,7 @@ jobs:
       with:
         node-version: '14.x'
         registry-url: 'https://npm.pkg.github.com'
-    - run: yarn workspace @testscp/b publish
+    - run: yarn workspace @craigphicks/.testscp-b publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   

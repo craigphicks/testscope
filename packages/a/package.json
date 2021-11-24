@@ -1,5 +1,5 @@
 {
-  "name": "@testscp/a",
+  "name": "@craigphicks/testscp-a",
   "version": "0.0.1",
   "description": "test of monorepo github packages",
   "main": "index.js",
