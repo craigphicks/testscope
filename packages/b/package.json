@@ -16,7 +16,8 @@
   "scripts": {
     "build":"tsc"
   },
-  "publishConfig":{
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
     "access": "public"
-  }
+  }  
 }
