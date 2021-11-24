@@ -15,3 +15,9 @@ so that this line can be used to push:
 git push git@gh-testscope:craigphicks/testscope.git
 ```
 
+To make this be used automatically on push
+```
+git remote remove origin  # in case origin is already set
+git remote add origin git@gh-testscope:craigphicks/testscope.git
+```
+
