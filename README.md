@@ -19,5 +19,12 @@ To make this be used automatically on push
 ```
 git remote remove origin  # in case origin is already set
 git remote add origin git@gh-testscope:craigphicks/testscope.git
+git push --set-upstream origin master
 ```
+Thereafter 
+```
+git push 
+```
+is sufficient
+
 
