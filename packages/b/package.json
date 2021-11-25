@@ -1,6 +1,6 @@
 {
   "name": "@craigphicks/testscp-b",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "test of monorepo github packages",
   "main": "index.js",
   "files": [],
