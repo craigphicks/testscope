@@ -1,0 +1,17 @@
+{
+  "name": "testscp-a",
+  "version": "0.0.2",
+  "description": "test",
+  "main": "index.js",
+  "repository": "\"https://github.com/craigphicks/testscope.git\"",
+  "author": "craigphicks",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@craigphicks/testscp-a": "0.0.6"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  }
+}
