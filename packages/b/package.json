@@ -1,8 +1,9 @@
 {
   "name": "@craigphicks/testscp-b",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "test of monorepo github packages",
   "main": "index.js",
+  "files": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/craigphicks/testscope.git"
