@@ -1,6 +1,6 @@
 {
   "name": "@craigphicks/testscp-b",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "test of monorepo github packages",
   "main": "index.js",
   "files": [],
@@ -19,7 +19,12 @@
   },
   "scripts": {
     "build": "tsc",
-    "pub": "yarn version --patch && yarn pack --filename package.tgz && yarn publish --tag $npm_package_version package.tgz && shx rm package.tgz"
+    "getver": "echo $npm_package_version",
+    "pub1": "yarn version --patch",
+    "pub2": "yarn pack --filename package.tgz",
+    "pub3": "yarn publish --tag $npm_package_version --new-version \"$npm_package_version\" package.tgz",
+    "pub4": "shx rm package.tgz",
+    "pub": "yarn version --patch && yarn pack --filename package.tgz && yarn publish --tag $npm_package_version --new-version \"$npm_package_version\" package.tgz && shx rm package.tgz"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
