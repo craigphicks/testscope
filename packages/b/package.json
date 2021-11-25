@@ -1,6 +1,6 @@
 {
   "name": "@craigphicks/testscp-b",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "test of monorepo github packages",
   "main": "index.js",
   "files": [],
@@ -14,14 +14,15 @@
   "devDependencies": {
     "typescript": "^4.5.2"
   },
+  "peerDependencies": {
+    "shx": "^0.3.3"
+  },
   "scripts": {
     "build": "tsc",
-    "ver": "yarn version --patch",
-    "pub": "yarn pack && yarn publish "
+    "pub": "yarn version --patch && yarn pack --filename package.tgz && yarn publish --tag $npm_package_version package.tgz && shx rm package.tgz"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"
-  },
-  "cfg": {}
+  }
 }
