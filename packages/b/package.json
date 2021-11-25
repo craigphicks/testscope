@@ -24,7 +24,7 @@
     "pub2": "yarn pack --filename package.tgz",
     "pub3": "yarn publish --tag $npm_package_version --new-version \"$npm_package_version\" package.tgz",
     "pub4": "shx rm package.tgz",
-    "pub": "yarn version --patch && yarn pack --filename package.tgz && yarn publish --tag $npm_package_version --new-version \"$npm_package_version\" package.tgz && shx rm package.tgz"
+    "pub": "yarn pub1 && yarn pub2 && yarn pub3 && yarm pub4"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
