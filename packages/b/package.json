@@ -1,6 +1,6 @@
 {
   "name": "@craigphicks/testscp-b",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "test of monorepo github packages",
   "main": "index.js",
   "files": [],
@@ -16,10 +16,12 @@
   },
   "scripts": {
     "build": "tsc",
+    "ver": "yarn version --patch",
     "pub": "yarn pack && yarn publish "
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "access": "public"
-  }
+  },
+  "cfg": {}
 }
