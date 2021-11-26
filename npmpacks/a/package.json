@@ -1,8 +1,9 @@
 {
   "name": "testscp-a",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "test",
   "main": "index.js",
+  "files":[".npmrc"],
   "repository": "\"https://github.com/craigphicks/testscope.git\"",
   "author": "craigphicks",
   "license": "MIT",

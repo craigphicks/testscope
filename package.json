@@ -2,12 +2,15 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "shx": "^0.3.3"
   },
-  "workspaces":[
-    "packages/*"
+  "workspaces": [
+    "packages/*",
+    "npmpacks/*"
   ],
-  "scripts":{
-    "install": "rm -rf packages/a/node_modules && rm -rf packages/b/node_modules && rm -rf node_modules && lerna bootstrap"
+  "scripts": {
+    "boot": "rm -rf packages/a/node_modules && rm -rf packages/b/node_modules && rm -rf node_modules && lerna bootstrap",
+    "pub": "node pkg.js pub"
   }
 }
